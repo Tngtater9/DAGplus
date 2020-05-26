@@ -3,14 +3,36 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-header > span.title {
-    font-size: 20px;
+.contact-icons{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 body{
     font-size: 18px;
 }
 
+header > img{
+    float: left;
+}
+
+header > p, a {
+    margin: 20px;
+}
+
+img{
+    margin: auto;
+}
+
 .attribution{
     font-size: 10px;
+}
+
+.title, h2{
+    text-align: center;
+}
+
+.next-btn {
+    position: absolute;
+    right: 40px;
 }

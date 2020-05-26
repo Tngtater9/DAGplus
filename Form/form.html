@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="DAGplus Autoglass Mobile Windshield Repair and Replacement Vehicle Door Repair Leak Repair Quote request form"
+  />
+  <title>DAGplus - Quote request form</title>
+  <link rel="stylesheet" href="../main.css">
+  <script type="text/javascript" src="http://www.carqueryapi.com/js/jquery.min.js"></script>
+  <script type="text/javascript" src="http://www.carqueryapi.com/js/carquery.0.3.4.js"></script>
+  <script type="text/javascript" src="carQuery.js"></script>
+</head>
+<body>
+  <form action="some endpoint" method="POST">
+    <h1 class="title">Get a quote</h1>
+    <section id="car-info">
+      <p>What is the year, make, and model of the vehicle?</p>
+      <select name="car-years" id="car-years"></select>  
+      <select name="car-makes" id="car-makes"></select> 
+      <select name="car-models" id="car-models"></select>
+      <select name="car-model-trims" id="car-model-trims"></select><br>
+      <p>Is your car not found in the list above? Enter the year, make, and model in the box below:</p>
+      <input type="text" id="other-car" name="other-car">
+      <br>
+      <p>How many doors does the vehicle have?</p>
+      <input type="radio" id="2-door" name="door-num" value="2-door">
+      <label for="2-door">2 door</label><br>
+      <input type="radio" id="3-door" name="door-num" value="3-door">
+      <label for="3-door">3 door</label><br>
+      <input type="radio" id="4-door" name="door-num" value="4-door">
+      <label for="4-door">4 door</label><br>
+      <p>Check if:</p>
+      <input type="checkbox" id="convertible" name="convertible" value="convertible">
+      <label for="convertible">Convertible</label><br>
+      <input type="checkbox" id="pickup" name="pickup" value="pickup">
+      <label for="pickup">Pickup Truck</label><br>
+      <input type="checkbox" id="cabover" name="cabover" value="cabover">
+      <label for="cabover">Cabover</label><br>
+      <button type="button" class="next-btn">NEXT</button><br><br>
+    </section>
+    <section id="job-info">
+      <p>What needs to be fixed?(Select all that apply)</p>
+      <input type="checkbox" id="glass" name="glass" value="glass">
+      <label for="glass">Auto glass Replacement</label><br>
+      <input type="checkbox" id="door-repair" name="door-repair" value="door-repair">
+      <label for="door-repair">Door repair</label><br>
+      <input type="checkbox" id="water" name="water" value="water">
+      <label for="water">Water leak repair</label><br><br>
+      <button type="button" class="next-btn">NEXT</button><br><br>
+    </section>
+    <section id="glass-details">
+      <p>What glass will we be replacing?(Select all that apply)</p>
+      <input type="checkbox" id="front-windshield" name="front-windshield" value="front-windshield">
+      <label for="front-windshield">Front Windshield</label><br>
+      <input type="checkbox" id="front-door" name="front-door" value="front-door">
+      <label for="front-door">Front Door</label><br>
+      <input type="checkbox" id="rear-door" name="rear-door" value="rear-door">
+      <label for="rear-door">Rear Door</label><br>
+      <input type="checkbox" id="vent" name="vent" value="vent-glass">
+      <label for="vent">Vent Glass</label><br>
+      <input type="checkbox" id="quarter" name="quarter" value="quarter-glass">
+      <label for="quarter">Quarter Glass</label><br>
+      <input type="checkbox" id="back" name="back" value="back-glass">
+      <label for="back">Back Glass</label><br>
+      <input type="checkbox" id="side-mirror" name="side-mirror" value="side-mirror-glass">
+      <label for="back">Side Mirror Glass</label><br><br>
+      <p>Is the glass laminated?</p>
+      <input type="radio" id="yes" name="laminated" value="yes">
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="laminated" value="no">
+      <label for="no">No</label><br>      
+      <p>Not sure what glass you need? <a href="tel:+1407-914-0916">Call us for assistance.</a></p>
+      <button type="button" class="next-btn">NEXT</button><br><br>
+    </section>
+    <section id="windshield-glass-details">
+      <p>Do you have any attachments on your glass: i.e. rain sensors, Lane Departure Warning System (LDWS), condensation sensor, humidity sensor, or antenna?</p>
+      <input type="radio" id="yes" name="attachments" value="yes">
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="attachments" value="no">
+      <label for="no">No</label><br>
+      <button type="button" class="next-btn">NEXT</button><br><br>
+    </section>
+    <section id="truck-backglass">
+      <p>What type of back glass do you need?</p>
+      <input type="radio" id="stationary" name="truck-backglass-type" value="stationary">
+      <label for="stationary">Stationary</label><br>
+      <input type="radio" id="3pc" name="truck-backglass-type" value="3pc">
+      <label for="3pc">3 piece slider</label><br>
+      <input type="radio" id="4pc" name="truck-backglass-type" value="4pc">
+      <label for="4pc">4 piece slider</label><br>
+      <p>Is it the side or center window of the back glass?</p>
+      <input type="radio" id="side" name="truck-backglass-window" value="side">
+      <label for="side">Side</label><br>
+      <input type="radio" id="center" name="truck-backglass-window" value="center">
+      <label for="center">Center</label><br>
+      <p>What type of glass would you prefer?</p>
+      <input type="radio" id="privacy" name="truck-backglass-privacy" value="privacy">
+      <label for="privacy">Privacy</label><br>
+      <input type="radio" id="clear" name="truck-backglass-privacy" value="clear">
+      <label for="clear">Clear</label><br>
+      <button type="button" class="next-btn">NEXT</button><br><br>
+    </section>
+    <section id="door-repair">
+      <p>Can you hear the motor running?</p>
+      <input type="radio" id="yes" name="door-motor" value="yes">
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="door-motor" value="no">
+      <label for="no">No</label><br>
+      <p>Can you lift the window with your hands?</p>
+      <input type="radio" id="yes" name="door-lift" value="yes">
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="door-lift" value="no">
+      <label for="no">No</label><br>
+      <button type="button" class="next-btn">NEXT</button><br><br>
+    </section>
+    <section id="water-leaks">
+      <p>Do you have access to a water hose?</p>
+      <input type="radio" id="yes" name="water-leaks" value="yes">
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="water-leaks" value="no">
+      <label for="no">No</label><br>
+      <button type="button" class="next-btn">NEXT</button><br><br>
+    </section>
+    <section id="pictures">
+      <p>Please provide a pictures of the damage and window attachments if any:</p>
+      <input type="file" id="pictures" name="pictures" multiple><br><br>
+      <button type="button" class="next-btn">NEXT</button><br><br>
+    </section>
+    <section id="contact">
+      <p>Please provide your contact information:</p>
+      <label for="fname">First name</label><br>
+      <input type="text" id="fname" name="fname" placeholder="First name"><br>
+      <label for="lname">Last name</label><br>
+      <input type="text" id="lname" name="lname" placeholder="Last name"><br>
+      <label for="street">Address</label><br>
+      <input type="text" id="street" name="street" placeholder="123 Main St"><br>
+      <label for="apt">Apt/Unit/ect</label><br>
+      <input type="text" id="apt" name="apt" placeholder="Apt A"><br>
+      <label for="city">City</label><br>
+      <input type="text" id="city" name="city" placeholder="Orlando"><br>
+      <label for="zipcode">Zipcode</label><br>
+      <input type="text" id="zipcode" name="zipcode" placeholder="32701"><br>
+      <label for="phone">Phone number</label><br>
+      <input type="tel" id="phone" name="phone" placeholder="407-555-5555"><br>
+      <p>Can we text you?</p>
+      <input type="radio" id="yes" name="text" value="yes">
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="text" value="no">
+      <label for="no">No</label><br>
+      <button type="submit" class="submit">NEXT</button><br><br>
+    </section>
+  </form>
+</body>
+</html>
